@@ -7,9 +7,9 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         
         {/* Logo */}
-        <h1 className="text-xl font-semibold tracking-wide">
+        <Link href="/" className="text-xl font-semibold tracking-wide">
           MyWebsite
-        </h1>
+        </Link>
 
         {/* Menu Items */}
         <div className="flex gap-6">
