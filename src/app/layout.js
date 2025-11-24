@@ -10,8 +10,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Navbar />     {/* ← Your Navbar */}
+       <div className="max-w-7xl mx-auto">
+         <Navbar />     {/* ← Your Navbar */}
         {children}
+       </div>
       </body>
     </html>
   );

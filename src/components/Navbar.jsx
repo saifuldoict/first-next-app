@@ -3,7 +3,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="bg-green-700 text-white px-6 py-4 shadow-md">
+    <nav className="bg-green-700 text-white px-6 py-4 shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         
         {/* Logo */}
@@ -27,6 +27,15 @@ const Navbar = () => {
 
           <Link href="/contact" className="hover:text-yellow-300 transition">
             Contact
+          </Link>
+        </div>
+
+        <div className="flex gap-6">
+          <Link href="/login" className="hover:text-yellow-300 transition">
+            Login
+          </Link>
+          <Link href="/register" className="hover:text-yellow-300 transition">
+            Register
           </Link>
         </div>
       </div>

@@ -1,11 +1,18 @@
-import Image from "next/image";
+import Footer from '@/components/Footer'
+import Hero from '@/components/Hero'
+import ProductList from '@/components/ProductList'
+import Testimonials from '@/components/Testimonials'
+import React from 'react'
 
-export default function Home() {
+const page = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <h1>Hello world</h1>
-        </div>
-    
-
+    <div>
+      <Hero/>
+      <Testimonials/>
+      <ProductList/>
+      <Footer/>
+    </div>
   )
 }
+
+export default page
